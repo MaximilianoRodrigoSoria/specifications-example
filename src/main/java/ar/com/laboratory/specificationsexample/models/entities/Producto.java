@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @Entity
@@ -22,4 +23,17 @@ public class Producto implements Serializable {
 
     @Column
     private String descripcion;
+
+    @Column(nullable = false)
+    private boolean isActive;
+
+    @Column(nullable = false)
+    private Date createdAt;
+
+    @Column(nullable = false)
+    private String createdBy;
+
+    private Date updatedAt;
+
+    private String updatedBy;
 }
