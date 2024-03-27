@@ -24,13 +24,13 @@ public class Producto implements Serializable {
     @Column
     private String descripcion;
 
-    @Column(nullable = false)
+    @Column
     private boolean isActive;
 
-    @Column(nullable = false)
+    @Column
     private Date createdAt;
 
-    @Column(nullable = false)
+    @Column
     private String createdBy;
 
     private Date updatedAt;
